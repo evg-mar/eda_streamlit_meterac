@@ -9,9 +9,11 @@ The data should contain at least the fileds:
 
 **Example CSV input file from www.meter.ac is [_./data/N222_Sf_Lulin.CSV_](./data/N222_Sf_Lulin.CSV_).**
 
-Fig 1. _Screenshots from the app_
+Fig 1. _Initial columns data overview (PyGWalker)_
 ![Screenshots 01](./screenshots/screenshot_01.png)
+Fig 2. _Interactive data exploration and visualization (PyGWalker)_
 ![Screenshots 02](./screenshots/screenshot_02.png)
+Fig 3. _Pearson correlations between different attributes(Pyplot & Seaborn)_
 ![Screenshots 03](./screenshots/screenshot_03.png)
 
 <!-- ![Project structure](./screenshots_webapp/project_structure_extadel.png) -->

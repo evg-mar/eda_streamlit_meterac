@@ -1,6 +1,6 @@
 #  Exploratory data analysis of tabular data (CSV input) 
 
-The data should contain at least the fileds: \
+The data should contain at least the fileds: 
 - _datatime_ (string or pandas datatime),
 - _pm_2.5 (float)_, 
 - _pm_10.0 (float)_, 

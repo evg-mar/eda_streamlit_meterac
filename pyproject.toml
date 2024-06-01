@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "eda-streamlit-pygwalk"
+version = "0.1.0"
+description = "Exploratory data analysis with PyGWalker & Streamlit"
+authors = ["Evgeniy Marinov <marinov.evgeniy@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+pygwalker = "0.4.8.8"
+streamlit = "1.30.0"
+seaborn = "0.13.2"
+pandas = "2.2.2"
+matplotlib = "3.7.2"
+statsmodels = "^0.14.2"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

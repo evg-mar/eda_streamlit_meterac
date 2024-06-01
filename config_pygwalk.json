@@ -1,0 +1,1019 @@
+[
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "point"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "report",
+            "name": "report",
+            "basename": "report",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date/Time",
+            "name": "Date/Time",
+            "basename": "Date/Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date",
+            "name": "Date",
+            "basename": "Date",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Time",
+            "name": "Time",
+            "basename": "Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "datetime",
+            "name": "datetime",
+            "basename": "datetime",
+            "semanticType": "temporal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "3hour",
+            "name": "3hour",
+            "basename": "3hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "6hour",
+            "name": "6hour",
+            "basename": "6hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month",
+            "name": "month",
+            "basename": "month",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "day",
+            "name": "day",
+            "basename": "day",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_hour",
+            "name": "year_month_hour",
+            "basename": "year_month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_hour",
+            "name": "month_hour",
+            "basename": "month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_3hour",
+            "name": "year_month_3hour",
+            "basename": "year_month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_3hour",
+            "name": "month_3hour",
+            "basename": "month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_6hour",
+            "name": "year_month_6hour",
+            "basename": "year_month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_6hour",
+            "name": "month_6hour",
+            "basename": "month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal",
+            "offset": 0
+          }
+        ],
+        "measures": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "unixtime",
+            "name": "unixtime",
+            "basename": "unixtime",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "hour",
+            "name": "hour",
+            "basename": "hour",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            },
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "rows": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "month_hour",
+            "name": "month_hour",
+            "basename": "month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "color": [
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": true,
+        "zeroScale": true,
+        "size": {
+          "mode": "auto",
+          "width": 2035,
+          "height": 1315
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_AKbE",
+      "name": "Per_1Hours"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "point"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "report",
+            "name": "report",
+            "basename": "report",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date/Time",
+            "name": "Date/Time",
+            "basename": "Date/Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date",
+            "name": "Date",
+            "basename": "Date",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Time",
+            "name": "Time",
+            "basename": "Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "datetime",
+            "name": "datetime",
+            "basename": "datetime",
+            "semanticType": "temporal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "3hour",
+            "name": "3hour",
+            "basename": "3hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "6hour",
+            "name": "6hour",
+            "basename": "6hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month",
+            "name": "month",
+            "basename": "month",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "day",
+            "name": "day",
+            "basename": "day",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_hour",
+            "name": "year_month_hour",
+            "basename": "year_month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_hour",
+            "name": "month_hour",
+            "basename": "month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_3hour",
+            "name": "year_month_3hour",
+            "basename": "year_month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_3hour",
+            "name": "month_3hour",
+            "basename": "month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_6hour",
+            "name": "year_month_6hour",
+            "basename": "year_month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_6hour",
+            "name": "month_6hour",
+            "basename": "month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal",
+            "offset": 0
+          }
+        ],
+        "measures": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "unixtime",
+            "name": "unixtime",
+            "basename": "unixtime",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "hour",
+            "name": "hour",
+            "basename": "hour",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            },
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "rows": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "month_3hour",
+            "name": "month_3hour",
+            "basename": "month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "color": [
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": true,
+        "zeroScale": true,
+        "size": {
+          "mode": "auto",
+          "width": 2035,
+          "height": 1315
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_hx5a",
+      "name": "Per_3Hours Copy"
+    },
+    {
+      "config": {
+        "defaultAggregated": true,
+        "geoms": [
+          "point"
+        ],
+        "coordSystem": "generic",
+        "limit": -1,
+        "timezoneDisplayOffset": 0
+      },
+      "encodings": {
+        "dimensions": [
+          {
+            "fid": "report",
+            "name": "report",
+            "basename": "report",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date/Time",
+            "name": "Date/Time",
+            "basename": "Date/Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Date",
+            "name": "Date",
+            "basename": "Date",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "Time",
+            "name": "Time",
+            "basename": "Time",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "datetime",
+            "name": "datetime",
+            "basename": "datetime",
+            "semanticType": "temporal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "3hour",
+            "name": "3hour",
+            "basename": "3hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "6hour",
+            "name": "6hour",
+            "basename": "6hour",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month",
+            "name": "month",
+            "basename": "month",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "day",
+            "name": "day",
+            "basename": "day",
+            "semanticType": "quantitative",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_hour",
+            "name": "year_month_hour",
+            "basename": "year_month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_hour",
+            "name": "month_hour",
+            "basename": "month_hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_3hour",
+            "name": "year_month_3hour",
+            "basename": "year_month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_3hour",
+            "name": "month_3hour",
+            "basename": "month_3hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "year_month_6hour",
+            "name": "year_month_6hour",
+            "basename": "year_month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "month_6hour",
+            "name": "month_6hour",
+            "basename": "month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_key_fid",
+            "name": "Measure names",
+            "analyticType": "dimension",
+            "semanticType": "nominal",
+            "offset": 0
+          }
+        ],
+        "measures": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "unixtime",
+            "name": "unixtime",
+            "basename": "unixtime",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "hour",
+            "name": "hour",
+            "basename": "hour",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          },
+          {
+            "fid": "gw_count_fid",
+            "name": "Row count",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "computed": true,
+            "expression": {
+              "op": "one",
+              "params": [],
+              "as": "gw_count_fid"
+            },
+            "offset": 0
+          },
+          {
+            "fid": "gw_mea_val_fid",
+            "name": "Measure values",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "sum",
+            "offset": 0
+          }
+        ],
+        "rows": [
+          {
+            "fid": "pm_2.5",
+            "name": "pm_2.5",
+            "basename": "pm_2.5",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "pm_10.0",
+            "name": "pm_10.0",
+            "basename": "pm_10.0",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "humidity",
+            "name": "humidity",
+            "basename": "humidity",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "atm_preassure",
+            "name": "atm_preassure",
+            "basename": "atm_preassure",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          },
+          {
+            "fid": "temperature",
+            "name": "temperature",
+            "basename": "temperature",
+            "analyticType": "measure",
+            "semanticType": "quantitative",
+            "aggName": "mean",
+            "offset": 0
+          }
+        ],
+        "columns": [
+          {
+            "fid": "year_month_6hour",
+            "name": "year_month_6hour",
+            "basename": "year_month_6hour",
+            "semanticType": "nominal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "color": [
+          {
+            "fid": "year",
+            "name": "year",
+            "basename": "year",
+            "semanticType": "ordinal",
+            "analyticType": "dimension",
+            "offset": 0
+          }
+        ],
+        "opacity": [],
+        "size": [],
+        "shape": [],
+        "radius": [],
+        "theta": [],
+        "longitude": [],
+        "latitude": [],
+        "geoId": [],
+        "details": [],
+        "filters": [],
+        "text": []
+      },
+      "layout": {
+        "showActions": false,
+        "showTableSummary": false,
+        "stack": "stack",
+        "interactiveScale": true,
+        "zeroScale": true,
+        "size": {
+          "mode": "auto",
+          "width": 2035,
+          "height": 1315
+        },
+        "format": {},
+        "geoKey": "name",
+        "resolve": {
+          "x": false,
+          "y": false,
+          "color": false,
+          "opacity": false,
+          "shape": false,
+          "size": false
+        }
+      },
+      "visId": "gw_Zv1u",
+      "name": "Per_6Hours"
+    }
+  ]

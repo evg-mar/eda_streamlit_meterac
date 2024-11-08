@@ -7,7 +7,7 @@ The data should contain at least the fileds:
 - _temperature(float)_, 
 - _himidity(float)_  
 
-**Example CSV input file from www.meter.ac is [_./data/N222_Sf_Lulin.CSV_](./data/N222_Sf_Lulin.CSV_).**
+**Example CSV input file from www.meter.ac is [_./data/N222_Sf_Lulin.CSV_](./data/N222_Sf_Lulin.csv).**
 
 Fig 1. _Initial columns data overview (PyGWalker)_
 ![Screenshots 01](./screenshots/screenshot_01.png)
